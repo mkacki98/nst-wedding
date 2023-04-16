@@ -16,13 +16,14 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s [%(levelname)s]: %(message)s"
 )
 
+
 class NST:
     def __init__(self):
         self.content_layers = ["conv_4"]
         self.style_layers = ["conv_1", "conv_2", "conv_3", "conv_4", "conv_5"]
 
     def run_inference(self, args, style, content, save):
-        """ Return `g` for defined style (`s`) and content (`c`) given args. """
+        """Return `g` for defined style (`s`) and content (`c`) given args."""
 
         logging.info("Building the style transfer model.")
 
