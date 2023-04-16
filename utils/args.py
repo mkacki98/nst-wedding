@@ -7,7 +7,7 @@ def get_args():
 
     parser.add_argument("--style_weight", type=int, default=1000000000)
     parser.add_argument("--content_weight", type=int, default=1)
-    parser.add_argument("--num_steps", type=int, default=30)
+    parser.add_argument("--num_steps", type=int, default=100)
     parser.add_argument("--style", type=str, default="picasso")
     parser.add_argument("--device", type=str, default="cpu")
 

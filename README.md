@@ -22,6 +22,18 @@ On the other hand, style loss measures how similar all activations of `s` and `g
 
 You see these two losses are kind of pulling the way `g` will like in different directions (more like content or more like style). Since the final loss is a weighted combination of the two losses, by manipulating the weights you can shape the way the final image `g` will look like.
 
+# Setup
+
+```
+conda env create -f environment.yml
+```
+
+By default it runs using `content-image.jpg` and `picasso.jpg`, change `--style` parameter to a new of a style `jpg` file to change the style, play around with weights to manipulate changes to the input image.
+
+```
+python main.py --style lempicka --num_steps 10 --style_weight 10000000
+```
+
 # Credits
 
 Credits to [Alexis Jackq](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html).
